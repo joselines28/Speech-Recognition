@@ -1,0 +1,142 @@
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: #333;
+ min-height: 100vh;
+}
+label{
+  position: relative;
+  top: -150px;
+  width: 150px;
+  height: 75px;
+  background: #970101da;
+  border-radius: 10px;
+}
+label .foco1, .foco2, .foco3, .foco4, .foco5 {
+    appearance: none;
+}
+label span
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 75px;
+  height:75px;
+  background: #333;
+  border:6px solid #fcfcfc;
+  border-radius: 14px;
+  cursor:pointer;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+label .foco1:checked ~ span
+{
+   left:75px
+}
+
+label .foco2:checked ~ span
+{
+   left:75px
+}
+label .foco3:checked ~ span
+{
+   left:75px
+}
+label .foco4:checked ~ span
+{
+   left:75px
+}
+label .foco5:checked ~ span
+{
+   left:75px
+}
+
+label span ion-icon
+{
+ color: rgba(255,255,255,0.25);
+ font-size: 2em;
+ transition: 0.5s;
+}
+label .foco1:checked ~ span ion-icon
+{
+color: rgba(255,255,255,1);
+filter: drop-shadow(0 0 5px #fff) drop-shadow(0 10px #fff) drop-shadow (0 0 15px #fff);
+
+}
+
+label .foco2:checked ~ span ion-icon
+{
+color: rgba(255,255,255,1);
+filter: drop-shadow(0 0 5px #fff) drop-shadow(0 10px #fff) drop-shadow (0 0 15px #fff);
+
+}
+
+label .foco3:checked ~ span ion-icon
+{
+color: rgba(255,255,255,1);
+filter: drop-shadow(0 0 5px #fff) drop-shadow(0 10px #fff) drop-shadow (0 0 15px #fff);
+
+}
+label .foco4:checked ~ span ion-icon
+{
+color: rgba(255,255,255,1);
+filter: drop-shadow(0 0 5px #fff) drop-shadow(0 10px #fff) drop-shadow (0 0 15px #fff);
+
+}
+
+label .foco5:checked ~ span ion-icon
+{
+color: rgba(255,255,255,1);
+filter: drop-shadow(0 0 5px #fff) drop-shadow(0 10px #fff) drop-shadow (0 0 15px #fff);
+
+}
+
+
+.bulb, .bulb2, .bulb3, .bulb4, .bulb5
+{
+ position: absolute;
+ top: 80px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 348px;
+ height: 408px;
+ pointer-events: none;
+ background: url(./Images/bulb_off.jpg);
+ transition: 00.5s;
+}
+
+
+label .foco1:checked ~ .bulb
+{
+ background: url(./Images/bulb_on.jpg);
+}
+
+label .foco2:checked ~ .bulb2
+{
+ background: url(./Images/bulb_on.jpg);
+}
+
+label .foco3:checked ~ .bulb3
+{
+ background: url(./Images/bulb_on.jpg);
+}
+
+label .foco4:checked ~ .bulb4
+{
+ background: url(./Images/bulb_on.jpg);
+}
+
+label .foco5:checked ~ .bulb5
+{
+ background: url(./Images/bulb_on.jpg);
+}
